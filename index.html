@@ -123,6 +123,7 @@
     }
 
     /* ── CHECKLIST: handwritten ticks ── */
+    .mail { color: var(--ink-2); }
     .checklist { list-style: none; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: .5rem 1.5rem; margin-bottom: 2rem; }
     .checklist li { display: flex; align-items: center; gap: .6rem; font-size: .92rem; color: var(--graphite-soft); }
     .checklist li.done { color: var(--ink); }
@@ -137,19 +138,6 @@
     .checklist li .box .sq { opacity: .9; }
     .checklist li:not(.done) .box .sq { stroke: var(--graphite-soft); opacity: .6; }
 
-    /* ── CONTACT ── */
-    .contact { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
-    .contact p { font-size: .92rem; color: var(--ink-2); }
-    .btn {
-      font-family: var(--font-sans); font-size: .9rem; font-weight: 500;
-      color: var(--ink); text-decoration: none;
-      padding: .6rem 1.1rem;
-      border: 1.5px solid var(--graphite);
-      border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; /* hand-drawn box */
-      transition: color .2s, border-color .2s;
-      white-space: nowrap;
-    }
-    .btn:hover { color: var(--red); border-color: var(--red); }
 
     /* ── FOOTER ── */
     .foot {
@@ -212,11 +200,6 @@
         <li><svg class="box" viewBox="0 0 20 20"><path class="sq" d="M3.2 3.5 L16.7 3.2 L16.6 16.6 L3.4 16.8 Z"/></svg>Final review</li>
         <li><svg class="box" viewBox="0 0 20 20"><path class="sq" d="M3.5 3.1 L16.5 3.4 L16.8 16.9 L3.1 16.5 Z"/></svg>Go live</li>
       </ul>
-
-      <div class="contact">
-        <p>Have a project in mind? We're still taking enquiries.</p>
-        <a class="btn" href="mailto:hello@techountant.com">hello@techountant.com</a>
-      </div>
     </div>
 
     <figure class="scene">
@@ -225,7 +208,7 @@
   </section>
 
   <footer class="foot">
-    <span>© <span id="year">2026</span> <span id="host-foot">this site</span></span>
+    <span>© <span id="year">2026</span> <span id="host-foot">this site</span> &nbsp;·&nbsp; <span class="mail">hello@techountant.com</span></span>
     <a class="powered" href="https://techountant.com">
       Powered by
       <img class="day" src="assets/logo-day.png" alt="Techountant" />
